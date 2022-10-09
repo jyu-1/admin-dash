@@ -22,25 +22,25 @@ body {
     padding: 25px;
 }
 
-.logo{
+.logo {
     color: white;
     font-weight: bold;
     font-size: 2rem;
 }
 
-.sidebar ul{
+.sidebar ul {
     color: white;
     font-weight: bold;
     font-size: 1.5rem;
     list-style-type: none;
 }
 
-.sidebar li{
+.sidebar li {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.settings{
+.settings {
     grid-row: 4/5;
 }
 
@@ -48,6 +48,19 @@ body {
     background-color: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.bot{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .main {
@@ -56,7 +69,7 @@ body {
     grid-row: 2 / 3;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
