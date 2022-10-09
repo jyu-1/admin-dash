@@ -67,9 +67,35 @@ body {
     background-color: rgb(183, 204, 228);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.left{
+    display:grid;
+    grid-template-rows: 50px;
+}
+
+.left-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 1fr 1fr;
+}
+
+.content{
+    border: 1px solid black;
+}
+
+.right {
+    display:grid;
+    grid-template-rows: 1fr 5fr 1fr 5fr;
+}
+
+.right .container-1, .right .container-2{
+    border: 1px solid black;
 }
